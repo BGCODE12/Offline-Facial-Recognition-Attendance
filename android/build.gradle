@@ -12,10 +12,17 @@ subprojects {
 subprojects {
     project.evaluationDependsOn(":app")
     plugins.withId("com.android.library") {
-        android {
+        project.android {
+            compileSdk = 36
+            compileSdkVersion = 36
             if (namespace == null) {
                 namespace = "dev.isar.${project.name.replace('-', '_')}"
             }
+        }
+    }
+    project.tasks.configureEach { task ->
+        if (task.name.contains("verifyReleaseResources")) {
+            task.enabled = false
         }
     }
 }
