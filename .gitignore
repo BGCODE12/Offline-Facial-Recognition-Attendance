@@ -1,0 +1,62 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+*.dll
+*.so
+*.dylib
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+.kotlin/
+**/android/.kotlin/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+**/build/
+/coverage/
+
+# Android Studio / Gradle
+.gradle/
+**/android/.gradle/
+**/android/build/
+**/android/app/build/
+/android/app/debug
+/android/app/profile
+/android/app/release
+/android/local.properties
+
+# iOS CocoaPods & Build
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/app.framework
+
+# Explicitly ensure ML models in assets are tracked
+!assets/mobilefacenet.tflite
+!assets/app_icon.png
